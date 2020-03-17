@@ -27,6 +27,7 @@ class BoxLastItem extends Component{
         
        this.setState(
            {
+            id: data.data[0].id,
             name: data.data[0].name,
             price: data.data[0].price,
             description: data.data[0].description,
@@ -63,7 +64,7 @@ class BoxLastItem extends Component{
                     <h3>Nombre: {this.state.name}</h3>
                     <p>Precio: ${this.state.price}</p>
                     <p>{this.state.description}</p>
-                    <a target="_blank" rel="nofollow" href="/">View product detail</a>
+                    <a target="_blank" rel="nofollow" href={`http://localhost:3000/productos/detalle/${this.state.id}`}>Ver detalle de Producto</a>
                 </div>
             </div>
         </div>

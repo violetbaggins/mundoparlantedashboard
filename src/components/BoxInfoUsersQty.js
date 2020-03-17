@@ -5,7 +5,7 @@ class BoxInfoUsersQty extends Component{
     constructor(props){
         super(props);
         this.state= {
-            quatity:"",
+            quantity:"",
             titulo: "Users total en la DB"
         }
     }
